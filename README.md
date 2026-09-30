@@ -1,3 +1,5 @@
+# Evidence-Led Online Fraud Investigation
+
 A practitioner methodology for turning public observations about possible online fraud into careful, traceable analysis. It keeps the focus on evidence and human review; it is not an automated verdict engine or a claim that any person or organization committed a crime.
 
 The workflow is to define a narrow question, record source-grounded observations, resolve entities cautiously, test competing explanations, communicate what remains uncertain, and preserve human review. This repository contains no real cases, targets, datasets, or collection code.
@@ -23,6 +25,7 @@ This is an early methodology draft, not a validated detector. It makes no empiri
 The method uses public, passive research. It is not permission to access accounts, contact targets or third parties, scan systems, evade controls, submit forms, test credentials, make transactions, intervene, or publish allegations. Follow applicable law, platform rules, and organizational review requirements.
 
 No project license is included. Review rights and retain required third-party attribution before reuse.
+
 ## Feedback
 
 Reviewers should flag unclear steps, unsupported claims, missing benign explanations, safety concerns, and attribution or licensing questions. Proposed improvements should preserve source traceability, counter-evidence, uncertainty, and human accountability.
