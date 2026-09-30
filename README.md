@@ -1,9 +1,6 @@
-# Evidence-Led Online Fraud Investigation
+A practitioner methodology for turning public observations about possible online fraud into careful, traceable analysis. It keeps the focus on evidence and human review; it is not an automated verdict engine or a claim that any person or organization committed a crime.
 
-**Draft for review. Private repository.** A standalone, human-reviewed methodology draft for turning public observations about possible online fraud into traceable, carefully qualified analysis. It is not an automated verdict engine, a legal case-management system, or a claim that any person or organization committed a crime.
-
-This draft focuses on a repeatable workflow: define a narrow question, record source-grounded observations, resolve entities cautiously, test competing explanations, communicate uncertainty, and preserve human review. It contains no real cases, targets, datasets, or collection code.
-
+The workflow is to define a narrow question, record source-grounded observations, resolve entities cautiously, test competing explanations, communicate what remains uncertain, and preserve human review. This repository contains no real cases, targets, datasets, or collection code.
 ## Documents
 
 - [Methodology](METHODOLOGY.md): scope, evidence handling, relationship analysis, review, reporting, and safety boundaries
@@ -21,10 +18,11 @@ This draft focuses on a repeatable workflow: define a narrow question, record so
 
 ## Status and limits
 
-This is an early methodology draft, not a validated detector. It has not been shown to improve accuracy, establish attribution, or prove crime. No empirical performance claims are made. The draft and its source/attribution history need author review before any public release. No license is selected here; rights and third-party attribution must be reviewed first.
+This is an early methodology draft, not a validated detector. It makes no empirical accuracy claims and does not establish attribution or prove that a crime occurred.
 
-The scope is public, passive research. This document does not authorize account access, contact with targets or third parties, scanning, evasion, form submission, credential testing, transactions, intervention, or publication of allegations. Follow applicable law, platform rules, and organizational review requirements.
+The method uses public, passive research. It is not permission to access accounts, contact targets or third parties, scan systems, evade controls, submit forms, test credentials, make transactions, intervene, or publish allegations. Follow applicable law, platform rules, and organizational review requirements.
 
+No project license is included. Review rights and retain required third-party attribution before reuse.
 ## Feedback
 
 Reviewers should flag unclear steps, unsupported claims, missing benign explanations, safety concerns, and attribution or licensing questions. Proposed improvements should preserve source traceability, counter-evidence, uncertainty, and human accountability.
