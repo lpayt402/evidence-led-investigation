@@ -100,6 +100,7 @@ def validate(case_dir: Path, as_json=False):
         return set(ids)
 
     source_ids = unique_ids(sources, "source_id", "sources.csv")
+    source_lineages = {row.get("source_id", ""): row.get("lineage_id", "").strip() for row in sources}
     observation_ids = unique_ids(observations, "observation_id", "observations.csv")
     claim_ids = unique_ids(claims, "claim_id", "claims.jsonl")
     for row in sources:
@@ -126,6 +127,21 @@ def validate(case_dir: Path, as_json=False):
         for ref in evidence + counter:
             if ref not in observation_ids:
                 errors.append(f"claim {cid}: unknown observation_id {ref}")
+        independence = row.get("independence_assessment")
+        if independence not in {"one_lineage", "multiple_lineages", "not_assessed"}:
+            errors.append(f"claim {cid}: independence_assessment must be one_lineage, multiple_lineages, or not_assessed")
+        else:
+            evidence_sources = {
+                observation.get("source_id", "")
+                for observation in observations
+                if observation.get("observation_id", "") in evidence
+            }
+            lineages = {source_lineages.get(source_id, "") for source_id in evidence_sources}
+            lineages.discard("")
+            if independence == "multiple_lineages" and len(lineages) < 2:
+                errors.append(f"claim {cid}: multiple_lineages requires supporting observations from at least two source lineages")
+            if independence == "one_lineage" and len(lineages) > 1:
+                errors.append(f"claim {cid}: one_lineage conflicts with supporting observations from multiple source lineages")
         if not row.get("alternatives") or not isinstance(row.get("alternatives"), list):
             errors.append(f"claim {cid}: needs at least one alternative explanation")
         if row.get("confidence") not in {"low", "moderate", "high", "not_assessed"}:

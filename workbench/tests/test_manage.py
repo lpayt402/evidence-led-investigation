@@ -52,5 +52,31 @@ class WorkbenchTests(unittest.TestCase):
             path.write_text("\n".join(json.dumps(c) for c in claims) + "\n", encoding="utf-8")
             self.assertEqual(manage.validate(target, as_json=True), 1)
 
+    def test_same_lineage_cannot_be_reported_as_multiple_independent_sources(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            target = Path(tmp) / "case"
+            shutil.copytree(FIXTURE, target)
+            path = target / "claims.jsonl"
+            claims = [json.loads(line) for line in path.read_text(encoding="utf-8").splitlines()]
+            claims[0]["evidence_ids"] = ["OBS-001", "OBS-002"]
+            claims[0]["independence_assessment"] = "multiple_lineages"
+            path.write_text("\n".join(json.dumps(c) for c in claims) + "\n", encoding="utf-8")
+            self.assertEqual(manage.validate(target, as_json=True), 1)
+
+    def test_multiple_lineages_are_allowed_when_sources_differ(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            target = Path(tmp) / "case"
+            shutil.copytree(FIXTURE, target)
+            sources = target / "sources.csv"
+            sources.write_text(sources.read_text(encoding="utf-8").replace("SYNTH-LINEAGE-1", "SYNTH-LINEAGE-2", 1), encoding="utf-8")
+            observations = target / "observations.csv"
+            observations.write_text(observations.read_text(encoding="utf-8").replace("OBS-002,SRC-001", "OBS-002,SRC-002"), encoding="utf-8")
+            path = target / "claims.jsonl"
+            claims = [json.loads(line) for line in path.read_text(encoding="utf-8").splitlines()]
+            claims[0]["evidence_ids"] = ["OBS-001", "OBS-002"]
+            claims[0]["independence_assessment"] = "multiple_lineages"
+            path.write_text("\n".join(json.dumps(c) for c in claims) + "\n", encoding="utf-8")
+            self.assertEqual(manage.validate(target, as_json=True), 0)
+
 if __name__ == "__main__":
     unittest.main()
