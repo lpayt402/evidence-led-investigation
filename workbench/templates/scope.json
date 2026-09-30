@@ -1,0 +1,11 @@
+{
+  "case_id": "replace-with-local-id",
+  "question": "Write one narrow, answerable question.",
+  "authority_basis": "Describe the applicable authority or research purpose.",
+  "collection_mode": "public-passive",
+  "scope_start": "YYYY-MM-DDTHH:MM:SSZ",
+  "scope_end": "YYYY-MM-DDTHH:MM:SSZ",
+  "exclusions": ["unrelated people", "private accounts", "unnecessary personal data"],
+  "prohibited_actions": ["login", "credential testing", "contact", "form submission", "scanning", "bypass"],
+  "stop_condition": "Stop when the defined public-source checks are complete or blocked; record unknown coverage."
+}

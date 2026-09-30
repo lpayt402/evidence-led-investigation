@@ -1,0 +1,3 @@
+claim_id,reviewer,disposition,rationale,reviewed_at
+CLM-001,synthetic-reviewer,accepted_for_report,Accepted only as an observation described by the fictional record; not a statement about a live site.,2026-01-12T11:00:00Z
+CLM-002,synthetic-reviewer,unresolved,No evidence distinguishes common control from the listed benign alternatives.,2026-01-12T11:00:00Z

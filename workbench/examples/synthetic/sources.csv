@@ -1,0 +1,3 @@
+source_id,source_type,url_or_reference,observed_at,capture_method,locator,content_hash,limitations,lineage_id
+SRC-001,fictional-page,https://shop-a.example.com,2026-01-12T10:00:00Z,invented-capture,fictional footer link,synthetic-only,fictional record; not a live observation,SYNTH-LINEAGE-1
+SRC-002,fictional-page,https://shop-b.example.com,2026-01-12T10:00:00Z,invented-capture,fictional returns page,synthetic-only,fictional record; not a live observation,SYNTH-LINEAGE-1

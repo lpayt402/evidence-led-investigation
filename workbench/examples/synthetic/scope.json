@@ -1,0 +1,11 @@
+{
+  "case_id": "SYNTH-001",
+  "question": "Did the fictional page at shop-a.example.com link to shop-b.example.com during the stated window?",
+  "authority_basis": "Synthetic training example only; no real-world collection authorized or performed.",
+  "collection_mode": "public-passive",
+  "scope_start": "2026-01-12T00:00:00Z",
+  "scope_end": "2026-01-12T23:59:59Z",
+  "exclusions": ["real people or businesses", "live browsing", "operator attribution", "fraud verdict"],
+  "prohibited_actions": ["login", "credential testing", "contact", "form submission", "scanning", "bypass"],
+  "stop_condition": "Example ends after the fictional capture is described."
+}

@@ -1,0 +1,3 @@
+observation_id,source_id,subject_id,observed_at,direct_observation,limitations,artifact_ref
+OBS-001,SRC-001,shop-a.example.com,2026-01-12T10:00:00Z,The fictional page footer links to shop-b.example.com/returns.,A displayed link does not identify page operator or current live state.,synthetic-only
+OBS-002,SRC-001,shop-a.example.com,2026-01-12T10:00:00Z,The fictional record describes the link as visible in one invented capture.,The capture method and content are invented for training.,synthetic-only

@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "name": "Evidence-Led Investigation Workbench",
+  "status": "early-prototype",
+  "updated": "2026-09-30",
+  "method": {
+    "id": "evidence-led-online-fraud-investigation",
+    "version": "0.1-draft",
+    "source_path": "../METHODOLOGY.md",
+    "project_license": "not selected"
+  },
+  "runtime": {
+    "network_by_default": false,
+    "dependencies": [],
+    "requires_human_disposition": true,
+    "agent_output_is_advisory": true,
+    "real_case_data_included": false,
+    "upstream_openplant_code_included": false
+  },
+  "design_principles": [
+    "deterministic local commands",
+    "separate source, runtime workspace, and provenance",
+    "portable agent instructions",
+    "tests and explicit validation limits"
+  ]
+}

@@ -3,10 +3,27 @@
 A practitioner methodology for turning public observations about possible online fraud into careful, traceable analysis. It keeps the focus on evidence and human review; it is not an automated verdict engine or a claim that any person or organization committed a crime.
 
 The workflow is to define a narrow question, record source-grounded observations, resolve entities cautiously, test competing explanations, communicate what remains uncertain, and preserve human review. This repository contains no real cases, targets, datasets, or collection code.
+
 ## Documents
 
 - [Methodology](METHODOLOGY.md): scope, evidence handling, relationship analysis, review, reporting, and safety boundaries
 - [Synthetic example](SYNTHETIC-EXAMPLE.md): a fictional worked example showing the distinction between observations, inferences, hypotheses, and human disposition
+- [Workbench](workbench/README.md): local templates and deterministic checks for recording sources, observations, claims, and human review
+
+## Try the workbench
+
+The workbench is a small, local extension of the methodology. It does not search or scrape the web. A researcher records public-source references and direct observations, an agent may suggest a claim that cites those observations, and a human reviewer records a separate disposition.
+
+Requires Python 3.10 or newer; no package install, credentials, or network access are needed for the checks:
+
+```bash
+python3 workbench/manage.py doctor
+python3 workbench/manage.py validate workbench/examples/synthetic
+python3 workbench/manage.py status workbench/examples/synthetic --json
+python3 workbench/manage.py test
+```
+
+`validate` checks required fields and evidence references. A valid result means the records are structurally consistent; it does not confirm the truth of a claim. `status` prints record counts. To create a blank local workspace, use `python3 workbench/manage.py bootstrap ./case-demo`; then fill its templates within an authorized scope. The included example is fictional and uses reserved `.example.com` names.
 
 ## Core principles
 
@@ -20,9 +37,9 @@ The workflow is to define a narrow question, record source-grounded observations
 
 ## Status and limits
 
-This is an early methodology draft, not a validated detector. It makes no empirical accuracy claims and does not establish attribution or prove that a crime occurred.
+This is an early methodology draft with a small workbench prototype, not a validated detector. The five local tests cover the synthetic example, bootstrap, missing source references, missing alternatives, and the separation between agent proposals and human disposition records. No empirical accuracy claims are made, and no attribution or crime is established.
 
-The method uses public, passive research. It is not permission to access accounts, contact targets or third parties, scan systems, evade controls, submit forms, test credentials, make transactions, intervene, or publish allegations. Follow applicable law, platform rules, and organizational review requirements.
+The method uses public, passive research. It is not permission to access accounts, contact targets or third parties, scan systems, evade controls, submit forms, test credentials, make transactions, intervene, or publish allegations. Follow applicable law, platform rules, and organizational review requirements. The workbench has no collector or account integration; it checks record structure, not the authenticity of a reviewer or the legal sufficiency of an investigation.
 
 No project license is included. Review rights and retain required third-party attribution before reuse.
 
