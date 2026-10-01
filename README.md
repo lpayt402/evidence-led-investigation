@@ -1,8 +1,8 @@
 # Evidence-Led Online Fraud Investigation
 
-A practitioner methodology for turning public observations about possible online fraud into careful, traceable analysis. It keeps the focus on evidence and human review; it is not an automated verdict engine or a claim that any person or organization committed a crime.
+A working method for analyzing public observations about possible online fraud. It keeps claims tied to sources and leaves room for other explanations. It is not a detector or a finding that any person or organization committed a crime.
 
-The workflow is to define a narrow question, record source-grounded observations, resolve entities cautiously, test competing explanations, communicate what remains uncertain, and preserve human review. This repository contains no real cases, targets, datasets, or collection code.
+Start with a narrow question. Record what you saw, where and when you saw it, and how it bears on the question. Keep inference and uncertainty visible. This repository contains no real cases, targets, datasets, or collection code.
 
 ## Documents
 
@@ -12,11 +12,11 @@ The workflow is to define a narrow question, record source-grounded observations
 
 ## Related article and lens
 
-The [task-to-outcome lens](docs/TASK-TO-OUTCOME-LENS.md) accompanies [“The Floor is Falling – Task by Task”](https://www.linkedin.com/pulse/floor-falling-task-lee-payton-ciu4c) (Sept. 13, 2026). It connects the article’s task-level question to this repository’s evidence and review workflow; Capability to Outcome Distance remains a question, not a score.
+The [task-to-outcome lens](docs/TASK-TO-OUTCOME-LENS.md) pairs with [“The Floor is Falling – Task by Task”](https://www.linkedin.com/pulse/floor-falling-task-lee-payton-ciu4c) (Sept. 13, 2026). It asks which task changed, what the evidence shows, and what still has to happen before an outcome. It connects those questions to this repository’s evidence and review workflow. Capability to Outcome Distance is a question, not a score.
 
 ## Try the workbench
 
-The workbench is a small, local extension of the methodology. It does not search or scrape the web. A researcher records public-source references and direct observations, an agent may suggest a claim that cites those observations, and a human reviewer records a separate disposition.
+The workbench runs offline. A researcher records source references and direct observations. An agent can propose claims that cite those observations; a human reviewer records a separate disposition.
 
 Requires Python 3.10 or newer; no package install, credentials, or network access are needed for the checks:
 
@@ -41,11 +41,11 @@ python3 workbench/manage.py test
 
 ## Status and limits
 
-This is an early methodology draft with a small workbench prototype, not a validated detector. The eight local tests cover the synthetic example, bootstrap, missing references and alternatives, separation of agent proposals from human disposition, source-lineage consistency, and malformed assessment values. No empirical accuracy claims are made, and no attribution or crime is established.
+This is an early methodology draft with a small workbench prototype, not a validated detector. Eight local tests cover the synthetic example, bootstrap, missing references and alternatives, separation of agent proposals from human disposition, source-lineage consistency, and malformed assessment values. No empirical accuracy claims are made, and no attribution or crime is established.
 
 The method uses public, passive research. It is not permission to access accounts, contact targets or third parties, scan systems, evade controls, submit forms, test credentials, make transactions, intervene, or publish allegations. Follow applicable law, platform rules, and organizational review requirements. The workbench has no collector or account integration; it checks record structure, not the authenticity of a reviewer or the legal sufficiency of an investigation.
 
-No project license is included. Review rights and retain required third-party attribution before reuse.
+No project license is included. Check reuse rights and keep any required third-party attribution.
 
 ## Feedback
 
