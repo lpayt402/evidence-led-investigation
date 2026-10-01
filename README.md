@@ -10,6 +10,10 @@ The workflow is to define a narrow question, record source-grounded observations
 - [Synthetic example](SYNTHETIC-EXAMPLE.md): a fictional worked example showing the distinction between observations, inferences, hypotheses, and human disposition
 - [Workbench](workbench/README.md): local templates and deterministic checks for recording sources, observations, claims, and human review
 
+## Related article and lens
+
+The [task-to-outcome lens](docs/TASK-TO-OUTCOME-LENS.md) accompanies [“The Floor is Falling – Task by Task”](https://www.linkedin.com/pulse/floor-falling-task-lee-payton-ciu4c) (Sept. 13, 2026). It connects the article’s task-level question to this repository’s evidence and review workflow; Capability to Outcome Distance remains a question, not a score.
+
 ## Try the workbench
 
 The workbench is a small, local extension of the methodology. It does not search or scrape the web. A researcher records public-source references and direct observations, an agent may suggest a claim that cites those observations, and a human reviewer records a separate disposition.
