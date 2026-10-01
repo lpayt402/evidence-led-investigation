@@ -128,7 +128,7 @@ def validate(case_dir: Path, as_json=False):
             if ref not in observation_ids:
                 errors.append(f"claim {cid}: unknown observation_id {ref}")
         independence = row.get("independence_assessment")
-        if independence not in {"one_lineage", "multiple_lineages", "not_assessed"}:
+        if not isinstance(independence, str) or independence not in {"one_lineage", "multiple_lineages", "not_assessed"}:
             errors.append(f"claim {cid}: independence_assessment must be one_lineage, multiple_lineages, or not_assessed")
         else:
             evidence_sources = {

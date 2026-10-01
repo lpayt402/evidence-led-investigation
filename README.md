@@ -37,7 +37,7 @@ python3 workbench/manage.py test
 
 ## Status and limits
 
-This is an early methodology draft with a small workbench prototype, not a validated detector. The seven local tests cover the synthetic example, bootstrap, missing references and alternatives, separation of agent proposals from human disposition, and source-lineage consistency. No empirical accuracy claims are made, and no attribution or crime is established.
+This is an early methodology draft with a small workbench prototype, not a validated detector. The eight local tests cover the synthetic example, bootstrap, missing references and alternatives, separation of agent proposals from human disposition, source-lineage consistency, and malformed assessment values. No empirical accuracy claims are made, and no attribution or crime is established.
 
 The method uses public, passive research. It is not permission to access accounts, contact targets or third parties, scan systems, evade controls, submit forms, test credentials, make transactions, intervene, or publish allegations. Follow applicable law, platform rules, and organizational review requirements. The workbench has no collector or account integration; it checks record structure, not the authenticity of a reviewer or the legal sufficiency of an investigation.
 

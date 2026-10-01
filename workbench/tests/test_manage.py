@@ -78,5 +78,16 @@ class WorkbenchTests(unittest.TestCase):
             path.write_text("\n".join(json.dumps(c) for c in claims) + "\n", encoding="utf-8")
             self.assertEqual(manage.validate(target, as_json=True), 0)
 
+    def test_malformed_independence_assessments_are_rejected(self):
+        for malformed in ({}, []):
+            with self.subTest(value=malformed), tempfile.TemporaryDirectory() as tmp:
+                target = Path(tmp) / "case"
+                shutil.copytree(FIXTURE, target)
+                path = target / "claims.jsonl"
+                claims = [json.loads(line) for line in path.read_text(encoding="utf-8").splitlines()]
+                claims[0]["independence_assessment"] = malformed
+                path.write_text("\n".join(json.dumps(c) for c in claims) + "\n", encoding="utf-8")
+                self.assertEqual(manage.validate(target, as_json=True), 1)
+
 if __name__ == "__main__":
     unittest.main()
