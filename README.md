@@ -23,7 +23,7 @@ python3 workbench/manage.py status workbench/examples/synthetic --json
 python3 workbench/manage.py test
 ```
 
-`validate` checks required fields and evidence references. A valid result means the records are structurally consistent; it does not confirm the truth of a claim. `status` prints record counts. To create a blank local workspace, use `python3 workbench/manage.py bootstrap ./case-demo`; then fill its templates within an authorized scope. The included example is fictional and uses reserved `.example.com` names.
+`validate` checks required fields, evidence references, and whether each claim's cited observations map to the stated source-lineage assessment. Different lineage IDs do not prove actual independence. A valid result means the records are structurally consistent; it does not confirm the truth of a claim. `status` prints record counts. To create a blank local workspace, use `python3 workbench/manage.py bootstrap ./case-demo`; then fill its templates within an authorized scope. The included example is fictional and uses reserved `.example.com` names.
 
 ## Core principles
 
@@ -37,7 +37,7 @@ python3 workbench/manage.py test
 
 ## Status and limits
 
-This is an early methodology draft with a small workbench prototype, not a validated detector. The five local tests cover the synthetic example, bootstrap, missing source references, missing alternatives, and the separation between agent proposals and human disposition records. No empirical accuracy claims are made, and no attribution or crime is established.
+This is an early methodology draft with a small workbench prototype, not a validated detector. The eight local tests cover the synthetic example, bootstrap, missing references and alternatives, separation of agent proposals from human disposition, source-lineage consistency, and malformed assessment values. No empirical accuracy claims are made, and no attribution or crime is established.
 
 The method uses public, passive research. It is not permission to access accounts, contact targets or third parties, scan systems, evade controls, submit forms, test credentials, make transactions, intervene, or publish allegations. Follow applicable law, platform rules, and organizational review requirements. The workbench has no collector or account integration; it checks record structure, not the authenticity of a reviewer or the legal sufficiency of an investigation.
 

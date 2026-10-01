@@ -13,10 +13,10 @@ Use only for bounded, authorized, public/passive research. The tool has no netwo
 1. Define one answerable question, source/time scope, authority basis, exclusions, and stop condition in `scope.json`.
 2. Register each source before relying on it: stable ID, original reference/URL, observation time and time zone, capture method, exact locator, source lineage, and limitations.
 3. Record direct observations separately from interpretations. Keep the smallest excerpt or reference needed; do not put raw captures or unnecessary personal data in the repo.
-4. Represent relationships and classification ideas as claims with observation IDs, contrary evidence, at least one benign alternative, qualitative confidence, and rationale.
+4. Represent relationships and classification ideas as claims with observation IDs, contrary evidence, at least one benign alternative, qualitative confidence, an `independence_assessment` that matches the cited source lineages, and rationale. Multiple lineage labels are a review prompt, not proof of independent sourcing.
 5. Route uncertain, fuzzy, or consequential claims to human review. Store reviewer, date, disposition, and rationale in `reviews.csv` only.
 6. Run `python3 manage.py validate CASE_DIR`. This validates structure and references, not factual truth or guilt.
-7. Report what is known, unknown, contrary, and not checked. Distinguish historical from current observations.
+7. Use `templates/linkage-brief.md` for relationship reviews; report what is known, unknown, contrary, and not checked. Record capture failures as coverage gaps and distinguish historical from current observations.
 
 ## Claim language
 
