@@ -1,12 +1,12 @@
 # From task capability to outcome
 
-This is a companion to [“The Floor is Falling – Task by Task”](https://www.linkedin.com/pulse/floor-falling-task-lee-payton-ciu4c), published Sept. 13, 2026. It carries one question into the [evidence-led methodology](../METHODOLOGY.md): which task changed, what supports that claim, and what still stands between it and a consequential outcome?
+This companion to [“The Floor is Falling – Task by Task”](https://www.linkedin.com/pulse/floor-falling-task-lee-payton-ciu4c), published Sept. 13, 2026, asks one question: which task changed, what evidence supports that claim, and what remains between it and a consequential outcome? It connects that question to the [evidence-led methodology](../METHODOLOGY.md).
 
-The lens does not determine whether any person used AI, detect AI-enabled fraud, or validate the article’s argument. Use it to organize claims, limits, and human review. The [synthetic example](../SYNTHETIC-EXAMPLE.md) shows how to keep observation, inference, alternatives, and disposition separate.
+This lens does not determine whether anyone used AI, detect AI-enabled fraud, or validate the article’s claims. It helps organize evidence, limits, and human review. The [synthetic example](../SYNTHETIC-EXAMPLE.md) shows how to separate observation, inference, alternatives, and disposition.
 
 ## Match the evidence to the claim
 
-Experiments, operational reports, and market cases answer different questions. Keep the claim narrow enough that its source can support it.
+Experiments, operational reports, and market or case records answer different questions. Keep each claim within what its source measured or recorded.
 
 | Evidence type | It can support | It does not establish on its own |
 |---|---|---|
@@ -70,15 +70,15 @@ This is a discussion aid, not advice for every asset class or jurisdiction. A co
 
 ## Eight discussion prompts
 
-The article closes with eight principles. These questions keep them tied to evidence:
+These prompts follow the article’s eight principles. Work from the record in front of you and leave a question open when the evidence cannot answer it:
 
-1. Did an existing task become cheaper to perform, or is there evidence the underlying approach changed?
-2. Which task changed, and which did not?
-3. Was that task a bottleneck in the path being studied?
-4. Did expertise disappear, or move into a model, tool, service, or workflow?
-5. Who holds the authority or resource needed for the final action?
-6. Do agreeing records have independent origins, or repeat one source across several surfaces?
-7. What can be verified outside the representation, regardless of how it was produced?
-8. After the capability works, what barriers remain between it and the outcome?
+1. Start with what changed: did an existing task become cheaper, or does the evidence show a different underlying approach?
+2. Name the task that changed and the tasks that stayed the same.
+3. Was that task actually holding up the path you are studying?
+4. Where does the expertise sit now—with a person, or in a model, tool, service, or workflow? Check whether it moved before saying it disappeared.
+5. Identify who holds the authority or resource needed to complete the final action.
+6. Trace agreeing records back to their origins. Are they independent, or are several surfaces repeating the same source?
+7. What can you check outside the representation? Use those checks regardless of how it was produced.
+8. Once the capability works, what still stands between it and the outcome?
 
-Keep claims source-grounded and human-reviewed. This guide adds no detector, score, target list, or collection step to the methodology.
+Record the answers with their sources and the human reviewer’s disposition. The lens adds no detector, score, target list, or collection step to the methodology.
