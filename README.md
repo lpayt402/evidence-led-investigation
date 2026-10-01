@@ -12,7 +12,7 @@ The workflow is to define a narrow question, record source-grounded observations
 
 ## Related article and lens
 
-The [task-to-outcome lens](docs/TASK-TO-OUTCOME-LENS.md) accompanies ["The Floor is Falling - Task by Task"](https://www.linkedin.com/pulse/floor-falling-task-lee-payton-ciu4c) (Sept. 13, 2026). It connects the article's task-level question to this repository's evidence and review workflow; Capability-to-Outcome Distance remains a question, not a score.
+The [task-to-outcome lens](docs/TASK-TO-OUTCOME-LENS.md) accompanies [“The Floor is Falling – Task by Task”](https://www.linkedin.com/pulse/floor-falling-task-lee-payton-ciu4c) (Sept. 13, 2026). It connects the article’s task-level question to this repository’s evidence and review workflow; Capability to Outcome Distance remains a question, not a score.
 
 ## Try the workbench
 
