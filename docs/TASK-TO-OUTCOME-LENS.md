@@ -28,7 +28,7 @@ These are examples already cited by the article, not a complete bibliography or 
 
 For each proposed claim, fill in the evidence before drawing a conclusion:
 
-- **Task:** Which bounded task may have changed-research, writing, translation, correspondence, coordination, or something else?
+- **Task:** Which bounded task changed: research, writing, translation, correspondence, coordination, or another task?
 - **Change:** What specifically became easier, faster, more consistent, or did not improve? What is directly observed, and what is inferred?
 - **Evidence:** Is the support an experiment, an operational report, or a market/case record? Record its source ID, original reference, publication date, observation date, and lineage.
 - **Limit:** What does that evidence leave unknown? Do not move from a task result to a claim about deployment, conversion, or loss without evidence for those links.
