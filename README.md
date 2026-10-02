@@ -29,6 +29,23 @@ python3 workbench/manage.py test
 
 `validate` checks required fields, evidence references, and whether each claim's cited observations map to the stated source-lineage assessment. Different lineage IDs do not prove actual independence. A valid result means the records are structurally consistent; it does not confirm the truth of a claim. `status` prints record counts. To create a blank local workspace, use `python3 workbench/manage.py bootstrap ./case-demo`; then fill its templates within an authorized scope. The included example is fictional and uses reserved `.example.com` names.
 
+## Evidence path
+
+The workbench keeps these records separate. Its offline checks validate structure and references; they do not establish source authenticity or claim truth.
+
+```text
+Source reference + direct observation
+                  |
+                  v
+       Claim citing observations
+                  |
+                  v
+       Validate fields and links
+                  |
+                  v
+      Human review and disposition
+```
+
 ## Core principles
 
 - A tip, search hit, or report is a lead, not a finding
