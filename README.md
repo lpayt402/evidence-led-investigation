@@ -7,7 +7,7 @@ Start with a narrow question. Record what you saw, where and when you saw it, an
 ## Documents
 
 - [Methodology](METHODOLOGY.md): scope, evidence handling, relationship analysis, review, reporting, and safety boundaries
-- [Synthetic example](SYNTHETIC-EXAMPLE.md): a fictional worked example showing the distinction between observations, inferences, hypotheses, and human disposition
+- [Synthetic example](SYNTHETIC-EXAMPLE.md): a synthetic worked example showing the distinction between observations, inferences, hypotheses, and human disposition
 - [Workbench](workbench/README.md): local templates and deterministic checks for recording sources, observations, claims, and human review
 
 ## Related article and lens
@@ -27,7 +27,7 @@ python3 workbench/manage.py status workbench/examples/synthetic --json
 python3 workbench/manage.py test
 ```
 
-`validate` checks required fields, evidence references, and whether each claim's cited observations map to the stated source-lineage assessment. Different lineage IDs do not prove actual independence. A valid result means the records are structurally consistent; it does not confirm the truth of a claim. `status` prints record counts. To create a blank local workspace, use `python3 workbench/manage.py bootstrap ./case-demo`; then fill its templates within an authorized scope. The included example is fictional and uses reserved `.example.com` names.
+`validate` checks required fields, evidence references, and whether each claim's cited observations map to the stated source-lineage assessment. Different lineage IDs do not prove actual independence. A valid result means the records are structurally consistent; it does not confirm the truth of a claim. `status` prints record counts. To create a blank local workspace, use `python3 workbench/manage.py bootstrap ./case-demo`; then fill its templates within an authorized scope. The included example uses synthetic training records and reserved `.example.com` names.
 
 ## Evidence path
 
