@@ -48,13 +48,15 @@ The article uses Capability to Outcome Distance (COD) as a way to ask what barri
 4. Who performs or authorizes the final action, and what evidence supports that step?
 5. What alternative explanation or missing observation could change the assessment?
 
-## Fictional transaction path
+<a id="fictional-transaction-path"></a>
 
-Assume both paths start with the same fictional seller presentation; they differ only in whether independent checks and recourse are used. Neither path represents a real buyer, seller, market, or incident.
+## Hypothetical transaction path
+
+Suppose a buyer is considering a seller's claim about an asset. Both paths begin with that same claim and differ only in whether independent checks and recourse are used. The diagram illustrates possible review steps; it reports no actual buyer, seller, transaction, or outcome.
 
 ```mermaid
 flowchart TD
-    A["Fictional seller presentation"] --> B["Buyer considers the claim"]
+    A["Seller's claim about an asset"] --> B["Buyer considers the claim"]
     B --> C["Path A: no separate check is shown"]
     C --> D["Buyer authorizes payment"]
     D --> E["Outcome depends on the transaction and available recourse"]
