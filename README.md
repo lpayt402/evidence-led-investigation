@@ -62,7 +62,7 @@ This is an early methodology draft with a small workbench prototype, not a valid
 
 The method uses public, passive research. It is not permission to access accounts, contact targets or third parties, scan systems, evade controls, submit forms, test credentials, make transactions, intervene, or publish allegations. Follow applicable law, platform rules, and organizational review requirements. The workbench has no collector or account integration; it checks record structure, not the authenticity of a reviewer or the legal sufficiency of an investigation.
 
-No project license is included. Check reuse rights and keep any required third-party attribution.
+Licensed under the [MIT License](LICENSE). Keep any required third-party attribution.
 
 ## Feedback
 
