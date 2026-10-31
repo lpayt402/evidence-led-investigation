@@ -1,8 +1,8 @@
 # Evidence-Led Online Fraud Investigation
 
-A working method for analyzing public observations about possible online fraud. It keeps claims tied to sources and leaves room for other explanations. It is not a detector or a finding that any person or organization committed a crime.
+A working method and offline workbench for analyzing public observations about possible online fraud. It keeps claims tied to sources and records alternative explanations.
 
-Start with a narrow question. Record what you saw, where and when you saw it, and how it bears on the question. Keep inference and uncertainty visible. This repository contains no real cases, targets, datasets, or collection code.
+Start with a narrow question. Record what you saw, where and when you saw it, and how it bears on the question. Keep inference and uncertainty visible.
 
 ## Documents
 
@@ -57,6 +57,8 @@ Source reference + direct observation
 - Human reviewers control classification and consequential decisions; automated output is advisory only
 
 ## Status and limits
+
+This repository contains no real cases, targets, datasets, or collection code.
 
 This is an early methodology draft with a small workbench prototype, not a validated detector. Eight local tests cover the synthetic example, bootstrap, missing references and alternatives, separation of agent proposals from human disposition, source-lineage consistency, and malformed assessment values. No empirical accuracy claims are made, and no attribution or crime is established.
 
